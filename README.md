@@ -1,4 +1,8 @@
 # MyNoteApp
+![Screenshot (147)](https://user-images.githubusercontent.com/87297598/138510039-74bc7d37-d558-43a1-8e67-8a738d35fb6e.png)
+![Screenshot (146)](https://user-images.githubusercontent.com/87297598/138510104-0bd95543-712e-4f10-82a5-426ebb6db5b1.png)
+Edit part
+![Screenshot (145)](https://user-images.githubusercontent.com/87297598/138510148-5c7325ff-141e-4c70-a2f3-057a368181a5.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
