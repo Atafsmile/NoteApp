@@ -1,0 +1,20 @@
+
+<div class="container-fluid p-3  ">
+    <div class="fs-3 bg-dark text-light m-4 p-2  w-50 text-center"style="border-radius:35%;" >Your Notes List</div>
+     <div class="cotainer p-5 ms-5">
+    <div class="row ">
+    <div class="card  p-2 m-1"  style="width: 20rem;" *ngFor='let item of data  ;let i=index '>
+      
+      <div class="card-body">
+       <h6 class="fw-bolder"> {{i+1}}.</h6>
+          <h5 class="card-title text-danger">{{item.tskName}}...</h5>
+          <p class="card-text">{{item.tskDescription}}.</p>
+        <div class="">
+          <a href="#" class="btn btn-secondary" (click)="deleteNote(i)" >Delete <i class="fas fa-trash p-1"></i></a>
+          <a href="#" class="btn btn-success ms-2 " [routerLink]="['/edit-note', i]" > Edit<i class="fas fa-edit p-1"></i></a>
+        </div>
+        </div>
+      </div>
+         </div>
+    </div>
+</div>

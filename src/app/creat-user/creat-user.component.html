@@ -1,0 +1,34 @@
+
+
+
+
+<div class="container" class=" m-5 p-5" style="border-radius: 20px;background-color: #EFEFEF;">
+  <div class="fs-3 bg-dark text-light  mb-2 ms-5 p-3  w-50 text-center me-auto ms-auto"style="border-radius:35%;" >My Notes App</div>
+
+<div class="row  p-5">
+  <form [formGroup]='noteForm'(submit)='AddTask()' >
+    <div class="mb-3 ">
+          <label  class="form-label" >Task Name</label>
+          <input type="name" class="form-control" id="exampleInputEmail1"  formControlName="tskName"  aria-describedby="nameTaskHelp">
+          <div  id="nameTaskHelp" class="form-text d-flex">You Have to Write Short Task Name
+          <div class="ms-auto text-dark" *ngIf="noteForm.controls['tskName'].hasError('required')">
+            Please Write Task Name!</div>
+            </div>
+        </div>
+        <div class="mb-3 ">
+          <label  class="form-label">Task Description</label>
+          <textarea class="form-control" id="addTxt" formControlName="tskDescription" rows="3"></textarea>
+          <div id="addTxt" class="form-text d-flex">You Have to Write Task Description
+              <div class="ms-auto text-dark" *ngIf="noteForm.controls['tskDescription'].hasError('required')">Please write Description! </div>
+          </div>
+
+        </div>
+        
+         <div class="text-center">
+          <button type="submit" class="btn btn-outline-dark ">Add Your Task</button>
+        </div>
+      </form>
+</div>
+
+
+</div>

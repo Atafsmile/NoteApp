@@ -1,0 +1,11 @@
+input.ng-invalid.ng-touched {
+    border: 2px solid steelblue  ;
+    background-color: darkgrey;
+    /*https://education.github.com/git-cheat-sheet-education.pdf*/
+}
+textarea.ng-invalid.ng-touched {
+    
+    border: 2px solid steelblue  ;
+    background-color: darkgrey;
+    /*https://education.github.com/git-cheat-sheet-education.pdf*/
+}
